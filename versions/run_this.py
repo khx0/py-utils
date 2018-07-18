@@ -3,7 +3,7 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2018-07-17
+# date: 2018-07-18
 # file: run_this.py
 ##########################################################################################
 
@@ -24,13 +24,16 @@ BASEDIR = os.path.dirname(os.path.abspath(__file__))
 RAWDIR = os.path.join(BASEDIR, 'raw')
 OUTDIR = os.path.join(BASEDIR, 'out')
 
-# useful meta properties of any python script
-print __file__
-print os.path.abspath(__file__)
-print os.path.dirname(os.path.abspath(__file__))
+if __name__ == '__main__':
 
-# print globals()
+    print __name__
+    
+    # useful meta properties of any python script
+    print __file__
+    print os.path.abspath(__file__)
+    print os.path.dirname(os.path.abspath(__file__))
 
+    # print globals()
 
 
 
