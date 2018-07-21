@@ -3,8 +3,8 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2018-07-12
-# file: run_versions.py
+# date: 2018-07-21
+# file: run_versions_python3.py
 ##########################################################################################
 
 import sys
@@ -24,7 +24,7 @@ BASEDIR = os.path.dirname(os.path.abspath(__file__))
 RAWDIR = os.path.join(BASEDIR, 'raw')
 OUTDIR = os.path.join(BASEDIR, 'out')
 
-cmd = "python versions.py &> python_versions_as_of_" + now + ".txt"
+cmd = "python3 versions.py &> python3_versions_as_of_" + now + ".txt"
 os.system(cmd)
 
 
