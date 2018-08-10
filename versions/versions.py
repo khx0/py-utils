@@ -8,19 +8,29 @@
 ##########################################################################################
 
 import sys
+
 print("Python sys.version = ", sys.version_info)
 
 import platform
 print("platform.python_version() =", platform.python_version())
 
-import numpy as np
-print("Numpy version = ", np.__version__)
+try:
+    import numpy as np
+    print("Numpy version = ", np.__version__)
+except ImportError:
+    print("Error: Numpy not installed")
 
-import scipy
-print("Scipy version = ", scipy.__version__)
+try:
+    import scipy
+    print("Scipy version = ", scipy.__version__)
+except ImportError:
+    print("Error: Scipy not installed")
 
-import matplotlib as mpl
-print("Matplotlib version = ", mpl.__version__)
+try:
+    import matplotlib as mpl
+    print("Matplotlib version = ", mpl.__version__)
+except ImportError:
+    print("Error: Matplotlib not installed")
 
 try:
     import torch

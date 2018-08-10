@@ -24,8 +24,17 @@ BASEDIR = os.path.dirname(os.path.abspath(__file__))
 RAWDIR = os.path.join(BASEDIR, 'raw')
 OUTDIR = os.path.join(BASEDIR, 'out')
 
-cmd = "python versions.py &> python2_versions_as_of_" + now + ".txt"
-os.system(cmd)
+if __name__ == '__main__':
 
+    outfilename = "python2_versions_as_of_" + now + ".txt"
+
+    cmd = "python versions.py &> " + outfilename
+    os.system(cmd)
+
+    cmd = "python --version"
+    os.system(cmd)
+
+    cmd = "which python"
+    os.system(cmd)
 
 
