@@ -3,12 +3,11 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2018-07-21
+# date: 2018-08-10
 # file: versions.py
 ##########################################################################################
 
 import sys
-
 print("Python sys.version = ", sys.version_info)
 
 import platform
