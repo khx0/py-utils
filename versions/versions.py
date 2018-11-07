@@ -3,7 +3,7 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2018-08-10
+# date: 2018-11-07
 # file: versions.py
 ##########################################################################################
 
@@ -54,7 +54,3 @@ try:
     print("scikit-image version =", skimage.__version__)
 except ImportError:
     print("Error: scikit-image not installed")
-
-
-
-
