@@ -3,22 +3,16 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2018-11-07
+# date: 2019-04-04
 # file: run_versions_python3.py
 ##########################################################################################
 
 import sys
 import os
-import subprocess
-import time
 import datetime
 
-def ensure_dir(dir):
-    if not os.path.exists(dir):
-        os.makedirs(dir)
-
 now = datetime.datetime.now()
-now = "%s-%s-%s" %(now.year, str(now.month).zfill(2), str(now.day).zfill(2))
+now = "{}-{}-{}".format(now.year, str(now.month).zfill(2), str(now.day).zfill(2))
 
 BASEDIR = os.path.dirname(os.path.abspath(__file__))
 RAWDIR = os.path.join(BASEDIR, 'raw')
