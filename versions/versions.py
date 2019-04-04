@@ -54,7 +54,7 @@ try:
     print("scikit-image version =", skimage.__version__)
 except ImportError:
     print("Error: scikit-image not installed")
-    
+
 try:
     import PyQt5
     from PyQt5.QtCore import QT_VERSION_STR

@@ -21,13 +21,13 @@ OUTDIR = os.path.join(BASEDIR, 'out')
 if __name__ == '__main__':
 
     print(__name__)
-    
+
     # useful meta properties of any python script
     print(__file__)
     print(os.path.abspath(__file__))
     print(os.path.dirname(os.path.abspath(__file__)))
 
     # print globals()
-    
+
     # print system path
     print(sys.path)
