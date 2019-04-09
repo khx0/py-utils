@@ -3,7 +3,7 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2019-04-03
+# date: 2019-04-09
 # file: fileio_utils.py
 ##########################################################################################
 
@@ -25,12 +25,12 @@ OUTDIR = os.path.join(BASEDIR, 'out')
 if __name__ == '__main__':
 
     print(__name__)
-    
+
     # useful meta properties of any python script
     print(__file__)
     print(os.path.abspath(__file__))
     print(os.path.dirname(os.path.abspath(__file__)))
-    
+
     # print system path
     print(sys.path)
 
@@ -45,4 +45,3 @@ if __name__ == '__main__':
     is a good replacement for the custom ensure_dir function above.
     The "exist_ok" keyword is however not available for python 2.7.x.
     '''
-
