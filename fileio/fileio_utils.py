@@ -3,7 +3,7 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2019-04-09
+# date: 2019-05-24
 # file: fileio_utils.py
 ##########################################################################################
 
@@ -45,3 +45,20 @@ if __name__ == '__main__':
     is a good replacement for the custom ensure_dir function above.
     The "exist_ok" keyword is however not available for python 2.7.x.
     '''
+    
+    #######################################################
+    # os.path.dirname and os.path.basename example usage
+    
+    # set up a longer dummy path
+    pathToFile = 'dirA/dirB/dirC'
+    os.makedirs(pathToFile, exist_ok = True)
+    
+    # Let's assume that dirC contains some important file.
+    # Then it is often useful, to have access to the two
+    # variables basedir and basename as illustrated below.
+    basedir = os.path.dirname(pathToFile)
+    basename = os.path.basename(pathToFile)
+    
+    print("basedir =", basedir)
+    print("basename =", basename)
+    #######################################################
