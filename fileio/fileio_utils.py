@@ -34,8 +34,8 @@ if __name__ == '__main__':
     # print system path
     print(sys.path)
 
-    ensure_dir(RAWDIR)
-    ensure_dir(OUTDIR)
+    ensure_dir(RAWDIR) # alternatively use: os.makedirs(RAWDIR, exist_ok = True)
+    ensure_dir(OUTDIR) # alternatively use: os.makedirs(OUTDIR, exist_ok = True)
 
     dirname_with_timestamp = "data_" + now
     ensure_dir(dirname_with_timestamp)
