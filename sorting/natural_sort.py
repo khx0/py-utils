@@ -32,8 +32,15 @@ def natural_sort(l):
 
 if __name__ == '__main__':
 
-    pass
+    ###################################################
+    # USAGE INSTRUCTIONS
+    #
+    # --- Method A ---
+    # sorted_list = natural_sort(input_list)
+    #
+    # --- Method B ---
+    # a_list.sort(key = natural_key)
+    #
+    ####################################################
 
-    # describe the two main usage modes here
-    # use like this
-    # alist.sort(key = natural_keys)
+    pass
