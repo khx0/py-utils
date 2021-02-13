@@ -3,7 +3,7 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2021-02-12
+# date: 2021-02-13
 # file: math_core.py
 # tested with python 3.7.6 and numpy 1.20.1
 ##########################################################################################
@@ -21,6 +21,7 @@ if __name__ == '__main__':
     pass
 
     '''
+    # check if all edge cases are covered
     # convert into unit test and demonstration example
     print(number_of_digits(99))
     print(number_of_digits(999))
