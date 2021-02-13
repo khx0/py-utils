@@ -26,7 +26,7 @@ where test_*.py is the considered unit test script.
 plain unittest invocation
 $python test_*.py
 -------------------------------------------------------------------------------
-Tested with pytest version 6.2.1.
+Tested with pytest version 6.2.2.
 '''
 
 import platform
@@ -47,13 +47,29 @@ class MathCoreTest(unittest.TestCase):
         n_digits = 2
         self.assertTrue(number_of_digits(n) == n_digits)
 
-        print(number_of_digits(99))
-        print(number_of_digits(999))
-        print(number_of_digits(100))
-        print(number_of_digits(1))
-        print(number_of_digits(10))
-        print(number_of_digits(11))
-        print(number_of_digits(9))
+        n = 999
+        n_digits = 3
+        self.assertTrue(number_of_digits(n) == n_digits)
+
+        n = 100
+        n_digits = 3
+        self.assertTrue(number_of_digits(n) == n_digits)
+
+        n = 1
+        n_digits = 1
+        self.assertTrue(number_of_digits(n) == n_digits)
+
+        n = 10
+        n_digits = 2
+        self.assertTrue(number_of_digits(n) == n_digits)
+
+        n = 11
+        n_digits = 2
+        self.assertTrue(number_of_digits(n) == n_digits)
+
+        n = 9
+        n_digits = 1
+        self.assertTrue(number_of_digits(n) == n_digits)
 
         return None
 
