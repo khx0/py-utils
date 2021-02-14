@@ -3,8 +3,8 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2021-02-13
-# file: test_matrixtools.py
+# date: 2021-02-14
+# file: test_math_core.py
 # tested with python 3.7.6 and numpy 1.20.1
 ##########################################################################################
 
@@ -71,8 +71,36 @@ class MathCoreTest(unittest.TestCase):
         n_digits = 1
         self.assertTrue(number_of_digits(n) == n_digits)
 
+        n = 0
+        n_digits = 1
+        self.assertTrue(number_of_digits(n) == n_digits)
+
+        n = -1
+        n_digits = 1
+        self.assertTrue(number_of_digits(n) == n_digits)
+
+        n = -10
+        n_digits = 2
+        self.assertTrue(number_of_digits(n) == n_digits)
+
+        n = -100
+        n_digits = 3
+        self.assertTrue(number_of_digits(n) == n_digits)
+
+        n = 999999999999
+        n_digits = 12
+        self.assertTrue(number_of_digits(n) == n_digits)
+
         return None
 
 if __name__ == '__main__':
+
+    print("/////////////////////////////////////////////////////////////////////////////")
+    print("Running", __file__)
+    print("/////////////////////////////////////////////////////////////////////////////")
+    print("Python Interpreter Version =", platform.python_version())
+    print("/////////////////////////////////////////////////////////////////////////////")
+    print("Start testing ...")
+    print("/////////////////////////////////////////////////////////////////////////////")
 
     unittest.main()

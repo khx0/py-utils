@@ -3,32 +3,34 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2021-02-13
+# date: 2021-02-14
 # file: math_core.py
 # tested with python 3.7.6 and numpy 1.20.1
 ##########################################################################################
 
-import numpy as np
-
-def number_of_digits(n: int) -> int:
-    '''
-    Returns the number of digits of a given integer n.
-    '''
-    return int(np.floor(np.log10(np.abs(n)) + 1))
+from math_core import number_of_digits
 
 if __name__ == '__main__':
 
-    pass
+    # demo usage of the number_of_digits function
 
-    '''
-    # print fonts which are available for the given matplotlib installation
-    flist = mpl.font_manager.get_fontconfig_fonts()
+    my_list = [
+        'item_01',
+        'item_02',
+        'item_03',
+        'item_04',
+        'item_05',
+        'item_06',
+        'item_07',
+        'item_08',
+        'item_09',
+        'item_10',
+    ]
 
-    n_digits = number_of_digits(len(flist))
+    n_digits = number_of_digits(len(my_list))
 
-    for i, fname in enumerate(flist):
+    for i, item in enumerate(my_list):
 
-        print("font #", str(i + 1).zfill(n_digits), "-->", fname)
+        print("item #", str(i + 1).zfill(n_digits), "-->", item)
 
-    print(f'{len(flist)} fonts detected')
-    '''
+    print(f'{len(my_list)} items detected')
